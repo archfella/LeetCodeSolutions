@@ -1,5 +1,5 @@
 /* 
-    Time: O(N*log(N))
+    Time: O(N*log(N)) --> Sorting is the Bottleneck.
     Space: O(1)
 */
 
