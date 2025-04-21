@@ -1,6 +1,6 @@
 /* 
-    Time: O(N*log(N)) --> Sorting is the Bottleneck.
-    Space: O(1)
+    Time: O(N*log(N)) --> Sorting.
+    Space: O(1) --> No additional data structures used.
 */
 
 class Solution {

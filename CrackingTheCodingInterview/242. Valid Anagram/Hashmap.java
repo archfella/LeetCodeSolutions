@@ -1,6 +1,6 @@
 /* 
-    Time: O(N)
-    Space: O(N)
+    Time: O(N), N = s.length() = t.length()
+    Space: O(N), HashMap with N entries
 */
 
 class Solution {
