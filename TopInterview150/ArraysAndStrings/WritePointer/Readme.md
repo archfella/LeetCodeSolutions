@@ -13,6 +13,9 @@
 - We can think of it like this - on the ***left side of the write pointer*** are elements that ***persist***.
 - ***Between*** write pointer and scan pointer are elements that are going to be ***filtered out***.
 
+## Complexity
+- Time: **O(N)**
+- Space: **O(1)**
 ## Visual Example 
 
 - Here is an example from the problem: [***80.Remove Duplicates from Sorted Array II***](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/):
