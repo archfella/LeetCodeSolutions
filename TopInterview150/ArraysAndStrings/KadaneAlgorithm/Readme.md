@@ -32,3 +32,7 @@
 ![RemoveDuplicates](images/kadane.png)
 
 - As you can see from the picture above, it's better to buy at the price of ***0*** the at the price of ***1*** ,since we are going to ***arrive at the selling price of 9 with either of the buying prices***.
+
+## Complexity
+- Time: ***O(N)***
+- Space: ***O(1)***
