@@ -26,3 +26,10 @@
   - Time: O(1)
 - **front** - Access first character.
   - Time: O(1)
+ 
+## String operations
+- **substring** - Generate substring.
+  - string substr (size_t pos = 0, size_t len = npos) const;
+    
+    --> Return the substring of lentgh **len** of a string starting (inclusive) from **pos**.
+
