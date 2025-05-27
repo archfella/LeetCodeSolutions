@@ -1,18 +1,7 @@
-# LeetCodeSolutions
+# Algorithms and Data Structures
 
-My solutions of [**LeetCode**](https://leetcode.com) problems.
-
-## Cracking The Coding Interview
-Currently I am going through a book - **Cracking The Coding Interview**.<br>
-
-I post solutions similar to the problems from the book that I found on **LeetCode** daily. You can find all the problems on this [*LeetCode Discuss Topic*](https://leetcode.com/discuss/post/1152824/cracking-the-coding-interview-6th-editio-97nm/).
-
-## LeetCode: Top Interview 150
-
-I am currently working on solving all 150 questions from the studyplan - [**Top Interview 150**](https://leetcode.com/studyplan/top-interview-150/).
-
----
-
-### Pattern/Algorithm Recognition
-
-- On my journey to become **better at LeetCode**, I stumbled upon various patterns and algorithms. I will try to commit as many as I can on my page.
+- I am on the journey of becoming better at algorithms and data structres, something I've always struggled with.
+- My goal is to master all the essential algorithms and data structures so I am **interview-ready**.
+  
+## Pattern/Algorithm Recognition
+- Solutions will be sorted into different folders based on the method used for solving the problem.
