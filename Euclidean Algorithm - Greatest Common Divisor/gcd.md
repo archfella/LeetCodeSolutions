@@ -1,14 +1,22 @@
-# Rotate Array
+# Euclidean Algorithm - Greatest Common Divisor
 
-## Ain't no philosophy here, just a simple trick to remember
+```cpp
+int gcd(int a, int b) {
 
-- To ***rotate an array by k steps***, we need to do these ***3 steps***:
-  - Reverse the ***whole array***.
-  - Reverse the ***first k elements subarray***.
-  - Reverse ***rest of the elements subarray***.
-  
-![RemoveDuplicates](images/reverse.png)
+    // Everything divides 0
+    if (a == 0) return b;
 
-## Complexity
-- Time: ***O(N)***
-- Space: ***O(1)***
+    if (b == 0) return a;
+
+    // If both numbers are equal
+    if (a == b) return a;
+
+    // If a is greater
+    if (a > b) return gcd(a - b, b);
+
+
+	// If b is greater
+    return gcd(a, b - a);
+}
+
+```
