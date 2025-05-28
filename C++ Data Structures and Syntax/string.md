@@ -30,6 +30,7 @@
 ## String operations
 - **substring** - Generate substring.
   - string substr (size_t pos = 0, size_t len = npos) const;
+    - Time: O(size of substring)
     
     --> Return the substring of lentgh **len** of a string starting (inclusive) from **pos**.
 
