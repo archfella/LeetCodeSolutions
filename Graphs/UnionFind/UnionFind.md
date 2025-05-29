@@ -7,49 +7,43 @@ class Solution {
 public:
     class UnionFind {
         private:
-        std::vector<int> parent, rank;
+        std::vector<int> parent;
         int count;
+
+        // Optional: return size of set containing u
+        int size(int u) {
+            return -parent[find(u)];
+        }
 
         public:
         UnionFind(int n) {
-            parent.resize(n);
-            rank.resize(n, 0); // all ranks start at 0
+            parent.assign(n, -1);  // each node is its own root with size 1
             count = n;
-            for (int i = 0; i < n; ++i)
-                parent[i] = i;
         }
 
-        // Find with path compression
+         // Find with path compression
         int find(int u) {
-            if (u != parent[u])
-                parent[u] = find(parent[u]); // path compression
-            return parent[u];
+            if (parent[u] < 0) return u;  // u is root
+            return parent[u] = find(parent[u]);  // path compression
         }
 
-        // Union by rank
+        // Union by size (stored as negative values)
         void union_sets(int u, int v) {
-            int pu = find(u);
-            int pv = find(v);
-            if (pu == pv) return;
+            u = find(u);
+            v = find(v);
+            if (u == v) return;
 
-            // attach smaller tree to larger
-            if (rank[pu] < rank[pv]) {
-                parent[pu] = pv;
-            } else if (rank[pu] > rank[pv]) {
-                parent[pv] = pu;
-            } else {
-                parent[pv] = pu;
-                rank[pu]++;
-            }
+            // Make the larger set the new root
+            if (parent[u] > parent[v]) std::swap(u, v);
+
+            parent[u] += parent[v];  // update size
+            parent[v] = u;           // merge v into u
+
             count--;
         }
 
-        int getCount() { return count; }
 
-        // Optional: check if two elements are in the same set
-        bool connected(int u, int v) {
-            return find(u) == find(v);
-        }
+        int getCount() { return count; }
     };
 
     int findCircleNum(vector<vector<int>>& isConnected) {
