@@ -25,11 +25,11 @@ How: It attaches the smaller tree under the root of the larger one and updates t
 class Solution {
 public:
     class UnionFind {
-        private:
+    private:
         std::vector<int> parent;
         int count;
 
-        public:
+     public:
         UnionFind(int n) {
             parent.assign(n, -1);  // each node is its own root with size 1
             count = n;
