@@ -29,11 +29,6 @@ public:
         std::vector<int> parent;
         int count;
 
-        // Optional: return size of set containing u
-        int size(int u) {
-            return -parent[find(u)];
-        }
-
         public:
         UnionFind(int n) {
             parent.assign(n, -1);  // each node is its own root with size 1
