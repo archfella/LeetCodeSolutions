@@ -5,6 +5,7 @@
 ## Capacity
 
 - ***size*** - Returns the number of elements.
+- **empty** - Checks whether the container is empty.
 
 **Note**: **size** and **length** do the exact same thing. We can use them interchangeably.
 
