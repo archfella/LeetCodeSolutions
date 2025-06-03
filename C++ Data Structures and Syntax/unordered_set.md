@@ -9,6 +9,21 @@
 
 **Note**: **size** and **length** do the exact same thing. We can use them interchangeably.
 
+## Operations
+
+- **insert** - Inserts an element into the set.
+  - Time: O(1) - Uses hash-keys.
+
+- **erase** - Inserts an element into the set.
+  - Time: O(1) - Uses hash-keys.
+ 
+- **find(key)** - Finds element with specific key.
+  - Time: O(1) - Uses hash-keys.
+ 
+- **count(key)** - Returns the number of elements matching specific key.
+  - Time: O(1) - Returns the number of elements matching specific key.
+
+
 ## Element access
 
 - **operator[]** - Get character of string.
