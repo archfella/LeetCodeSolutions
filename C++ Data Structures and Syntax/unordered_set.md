@@ -1,5 +1,8 @@
 ## [std::unordered_set](https://en.cppreference.com/w/cpp/container/unordered_set.html)
 
+## Link between set and hashmap
+- We can look at a set as a hashmap(frequency map) where each elements frequency is 1.
+  
 # Essential:
 
 ## Construction
