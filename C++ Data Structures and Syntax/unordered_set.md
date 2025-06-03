@@ -24,7 +24,7 @@
 - **erase** - Inserts an element into the set.
   - Time: O(1) - Uses hash-keys.
  
-- **find(key)** - Finds element with specific key.
+- **contains(key)** - Checks whether the set contains the element 'key'.
   - Time: O(1) - Uses hash-keys.
  
 - **count(key)** - Returns the number of elements matching specific key.
