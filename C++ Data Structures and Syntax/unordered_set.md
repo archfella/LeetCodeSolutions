@@ -2,6 +2,10 @@
 
 # Essential:
 
+## Construction
+  unordered_set<int> set1(nums1.begin(), nums1.end());
+    - Time: O(N) = O(N)*O(1), N insertions each with O(1) time.
+
 ## Capacity
 
 - ***size*** - Returns the number of elements.
